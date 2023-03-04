@@ -1,0 +1,96 @@
+/* Geral */
+.perfis {
+    display: flex;
+    gap: 10px;
+    width: max(60%, 800px);
+    margin: 40px auto;
+    padding: 26px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.perfis .separador {
+    margin: 16px;
+    height: 550px;
+    width: 1px;
+    background: #e3e1e1;
+}
+
+
+/* Identidade */
+.identidade {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.identidade .foto_perfil {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #c887fa;
+    overflow: hidden;
+}
+
+.identidade .foto_perfil img {
+    width: 100%;
+}
+
+.identidade .info h2 {
+    color: #be77f5;
+    font-size: 23px;
+    margin: 0 0 2px 0;
+    padding: 0;
+}
+
+.identidade .info .social_media a {
+    margin: 0 2px;
+    text-decoration: none;
+}
+
+.identidade .info .social_media img {
+    width: 19px;
+}
+
+
+/* Conteúdo */
+.conteudo {
+    line-height: 1.7;
+    color: #333;
+}
+
+.conteudo h3 {
+    padding: 0;
+    margin: 16px 0 2px 0;
+    font-size: 20px;
+}
+
+.conteudo p, .conteudo ul, .conteudo li {
+    margin: 0;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1060px) {
+    .perfis {
+        width: 90%;
+    }
+
+    .conteudo h3 {
+        margin: 8px 0 2px 0;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .perfis {
+        width: 85%;
+        padding: 26px 20px;
+        flex-direction: column;
+    }
+
+    .perfis .separador {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,9 @@
+.sugestoes {
+    width: 80vw;
+    margin: 60px auto auto auto;
+}
+
+.sugestoes h3 {
+    color: #b062ec;
+    text-decoration: underline;
+}

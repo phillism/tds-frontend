@@ -1,0 +1,9 @@
+.trabalhos {
+    width: 80vw;
+    margin: 60px auto auto auto;
+}
+
+.trabalhos a {
+    color: #b062ec;
+    text-decoration: underline;
+}

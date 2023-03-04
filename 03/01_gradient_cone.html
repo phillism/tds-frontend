@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 - Gradient Radial</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .gradients {
+            width: 90vw;
+            margin: auto;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .gradients > .gradient {
+            width: 400px;
+            height: 250px;
+            border-radius: 1.2rem;
+        }
+
+        .gradients > .gradient.gradient-01 {
+            background: conic-gradient(#ff00dd, #ffb0ee, #008000);
+        }
+
+        .gradients > .gradient.gradient-02 {
+            background: conic-gradient(#ffa8a8, #802828, #d13434);
+            border: 3px solid #800000;
+        }
+
+        .gradients > .gradient.gradient-03 {
+            background: conic-gradient(#00ff2a, #282e80, #ffe920, #ff0202);
+            border: 3px solid #008015;
+        }
+    </style>
+</head>
+<body>
+    <div class="gradients">
+        <div class="gradient gradient-01"></div>
+        <div class="gradient gradient-02"></div>
+        <div class="gradient gradient-03"></div>
+    </div>
+</body>
+</html>
