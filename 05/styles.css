@@ -16,7 +16,7 @@ body {
     text-align: right;
 }
 
-.paragrafo {
+p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     width: 88%;
