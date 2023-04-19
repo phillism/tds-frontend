@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+	<title>Catálogo de Filmes Populares | Home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="cabecalho">
+		<div class="gradient"></div>
+		<div class="conteudo">
+			<img src="./assets/web-icon.png" alt="Ilustração web">
+			<h1 class="titulo">
+				Estrutura Básica de uma Página Web
+			</h1>
+			<hr>
+		</div>
+	</header>
+
+	<main class="conteudo">
+		<section class="introducao">
+			<h2>Introdução</h2>
+			<p>Organizar o código de uma página web pode parecer uma tarefa secundária, <strong>mas é fundamental para manter a qualidade e a facilidade de manutenção do projeto</strong>.</p>
+			<p>Neste artigo, vamos explorar a importância da organização de código e como aplicá-la de forma eficiente em suas páginas web.</p>
+		</section>
+		<section class="importancia">
+			
+			<h2>Importância</h2>
+			<p>Uma boa organização de arquivos é essencial para tornar o desenvolvimento de um projeto mais fácil e eficiente. Além disso, ajuda a garantir que os arquivos possam ser <em>facilmente encontrados e alterados no futuro</em>.</p>
+			<p>Algumas vantagens ao adotar essa nova prática:</p>
+			<ol>
+				<li>Facilita a manutenção do código, tornando-o <span class="underline">mais claro e compreensível</span>;</li>
+				<li>Reduz a possibilidade de erros e bugs no código;</li>
+				<li>Melhora a colaboração entre os membros da equipe de desenvolvimento;</li>
+				<li>Torna o processo de atualização e adição de novas funcionalidades <span class="underline">mais eficiente</span>;</li>
+				<li>Aumenta a escalabilidade da página, permitindo que ela cresça de maneira ordenada e sustentável;</li>
+				<li>Ajuda a evitar conflitos entre diferentes versões de arquivos e permite que se faça um controle de versão mais efetivo.</li>
+			</ol>
+	
+			<p>Para ficar mais claro, vamos pegar duas estruturas de arquivos distintas, uma organizada e a outra não:</p>
+	
+			<h3>Estrutura desorganizada:</h3>
+			<ul class="arvore-arquivo">
+				<li class="li-img">background.img</li>
+				<li class="li-img">perifl.jpg</li>
+				<li class="li-html">index.html</li>
+				<li class="li-html">perfil.html</li>
+				<li class="li-css">perfil.css</li>
+				<li class="li-css">global.css</li>
+				<li class="li-js">eventos.js</li>
+				<li class="li-js">script.js</li>
+			</ul>
+	
+			<h3>Estrutura organizada:</h3>
+			<ul class="arvore-arquivo">
+				<li>
+					<li class="li-folder">assets</li>
+					<ul class="li-img">
+						<li>background.img</li>
+						<li>perifl.jpg</li></li>
+					</ul>
+				</li>
+				<li>
+					<li class="li-folder">scripts</li>
+					<ul class="li-js">
+						<li>eventos.js</li>
+						<li>script.js</li>
+					</ul>
+				</li>
+				<li>
+					<li class="li-folder">styles</li>
+					<ul class="li-css">
+						<li>perfil.css</li>
+						<li>global.css</li>
+					</ul>
+				</li>
+				<li class="li-html">index.html</li>
+				<li class="li-html">perfil.html</li>
+			</ul>
+
+			<a href="./assets-exemplos.html">Veja mais exemplos de possíveis arquvios da pasta "assets" ></a>
+		</section>
+		<section>
+			<h2>Definição estrutural</h2>
+			<p>Ao entender qual o papel de cada pasta e arquivo, você pode otimizar sua produção e <span class="underline">garantir uma manutenção mais fácil e rápida do seu código</span>. Lembre-se: a organização começa na raiz do projeto, onde os arquivos principais, como o index.html, devem ser colocados de forma clara e estratégica.</p>
+	
+			<h3>Pasta "assets"</h3>
+			<p>A pasta "assets" geralmente é usada para armazenar arquivos como <em>imagens, ícones, fontes e outros recursos que são usados na página web</em>. Esses arquivos são referenciados no HTML e em outros arquivos da pasta, como CSS e JavaScript.</p>
+	
+			<h3>Pasta "scripts"</h3>
+			<p>A pasta "scripts" é geralmente usada para armazenar <em>arquivos JavaScript que são usados na página</em>. No entanto, caso sua página contenha apenas um arquivo Javascript, você pode optar por deixá-lo na mesma pasta que o index.html para facilitar o acesso e manutenção do código.</p>
+	
+			<h3>Pasta "styles"</h3>
+			<p>E, para finalizar, a pasta "styles" é geralmente usada para referenciar <em>arquivos de estilização</em>. Assim como nos scripts, caso sua página contenha apenas um arquivo de estilização, você também pode optar por deixá-lo na mesma pasta que o index.html.</p>
+
+			<a href="./exemplos-pastas.html">Veja mais exemplos sobre estas pastas ></a>
+		</section>
+	</main>
+
+	<footer>
+		Todos os direitos reservados &copy; Felipe & José.
+	</footer>
+</body>
+</html>

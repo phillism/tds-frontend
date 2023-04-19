@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+body {
+	margin: 0 auto;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5;
+	padding: 0;
+	font-size: 16px;
+}
+
+
+
+/* Estilização do cabeçalho */
+.cabecalho .gradient {
+	background-image: linear-gradient(45deg, rgb(253, 176, 247), rgb(147, 110, 248));
+	width: 100%;
+	height: 12rem;
+	margin-bottom: 1rem;
+}
+
+.cabecalho .titulo {
+	margin: 3px 3px 0 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+
+
+/* Estilização do conteúdo em geral */
+.conteudo {
+	width: 60vw;
+	margin: auto;
+}
+
+.conteudo .arvore-arquivo {
+	background: rgb(240, 240, 240);
+	width: 12.5rem;
+	padding: .5rem 2rem;
+	border-radius: 0 1rem 1rem 0;
+	border-left: 3px solid rgb(147, 110, 248);
+	font-family: monospace;
+}
+
+.conteudo .arvore-arquivo ul {
+	padding: 0 1.2rem;
+}
+
+.conteudo > section {
+	margin: 4rem 0;
+	width: 100%;
+}
+
+
+
+/* Estilização de listas */
+ul, ul li {
+	list-style-type: none;
+}
+
+ul .li-folder {
+	list-style-image: url(./assets/folder-icon.png);
+}
+
+ul .li-css {
+	list-style-image: url(./assets/css-icon.png);
+}
+
+ul .li-js {
+	list-style-image: url(./assets/js-icon.png);
+}
+
+ul .li-img {
+	list-style-image: url(./assets/image-icon.png);
+}
+
+ul .li-html {
+	list-style-image: url(./assets/html-icon.png);
+}
+
+
+/* Outros */
+a {
+	color: rgb(132, 88, 252);
+}
+
+h3 {
+	font-weight: 500;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+
+
+/* Estilização rodapé */
+footer {
+	margin: 0;
+	padding: 0;
+	width: 99%;
+	background: #111;
+	color: #fff;
+	text-align: center;
+	padding: .3rem;
+	font-size: .75rem;
+}
