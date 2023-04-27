@@ -9,29 +9,27 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
-	<title>Catálogo de Filmes Populares | Home</title>
+	<title>Tópico de Estrutura Básica de uma Página Web | Introdução</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header class="cabecalho">
 		<div class="gradient"></div>
 		<div class="conteudo">
-			<img src="./assets/web-icon.png" alt="Ilustração web">
-			<h1 class="titulo">
-				Estrutura Básica de uma Página Web
-			</h1>
+			<img src="./assets/web-icon.png" alt="Ícone simbolizando o tema 'programação web'">
+			<h1 class="titulo">Estrutura Básica de uma Página Web</h1>
 			<hr>
 		</div>
 	</header>
 
 	<main class="conteudo">
 		<section class="introducao">
+			<img class="ilustracao" src="./assets/ilustracao.jpeg" alt="Computador ilustrativo com símbolos da programação Web">
 			<h2>Introdução</h2>
 			<p>Organizar o código de uma página web pode parecer uma tarefa secundária, <strong>mas é fundamental para manter a qualidade e a facilidade de manutenção do projeto</strong>.</p>
-			<p>Neste artigo, vamos explorar a importância da organização de código e como aplicá-la de forma eficiente em suas páginas web.</p>
+			<p>Neste tópico, vamos explorar a importância da organização de código e como aplicá-la de forma eficiente em suas páginas web.</p>
 		</section>
 		<section class="importancia">
-			
 			<h2>Importância</h2>
 			<p>Uma boa organização de arquivos é essencial para tornar o desenvolvimento de um projeto mais fácil e eficiente. Além disso, ajuda a garantir que os arquivos possam ser <em>facilmente encontrados e alterados no futuro</em>.</p>
 			<p>Algumas vantagens ao adotar essa nova prática:</p>
@@ -60,32 +58,35 @@
 	
 			<h3>Estrutura organizada:</h3>
 			<ul class="arvore-arquivo">
+				<li class="li-folder">assets</li>
 				<li>
-					<li class="li-folder">assets</li>
 					<ul class="li-img">
 						<li>background.img</li>
-						<li>perifl.jpg</li></li>
+						<li>perifl.jpg</li>
 					</ul>
 				</li>
+
+				<li class="li-folder">scripts</li>
 				<li>
-					<li class="li-folder">scripts</li>
 					<ul class="li-js">
 						<li>eventos.js</li>
 						<li>script.js</li>
 					</ul>
 				</li>
+
+				<li class="li-folder">styles</li>
 				<li>
-					<li class="li-folder">styles</li>
 					<ul class="li-css">
 						<li>perfil.css</li>
 						<li>global.css</li>
 					</ul>
 				</li>
+
 				<li class="li-html">index.html</li>
 				<li class="li-html">perfil.html</li>
 			</ul>
 
-			<a href="./assets-exemplos.html">Veja mais exemplos de possíveis arquvios da pasta "assets" ></a>
+			<a id="secao-01" href="./organizacao-secao.html">Clique aqui para ver mais a fundo &gt;</a>
 		</section>
 		<section>
 			<h2>Definição estrutural</h2>
@@ -100,7 +101,7 @@
 			<h3>Pasta "styles"</h3>
 			<p>E, para finalizar, a pasta "styles" é geralmente usada para referenciar <em>arquivos de estilização</em>. Assim como nos scripts, caso sua página contenha apenas um arquivo de estilização, você também pode optar por deixá-lo na mesma pasta que o index.html.</p>
 
-			<a href="./exemplos-pastas.html">Veja mais exemplos sobre estas pastas ></a>
+			<a  id="secao-02" href="./exemplos-pastas.html">Veja mais exemplos sobre estas pastas &gt;</a>
 		</section>
 	</main>
 
