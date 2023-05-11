@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="topo">Topo</header>
+    <p>Endereço absoluto: <a target="_blank" href="https://www.ifpi.edu.br">IFPI</a></p>
+    <p>Endereço relativo: <a href="segunda.html">Página secundária</a></p>
+    <p>Endereço relativo: <a href="segunda.html#final">Página secundária no final</a></p>
+    <p>Ir para o footer: <a href="#footer">Final do site</a></p>
+    <p>Link vazio: <a onclick="escurecer()" href="#">escurecer</a> | <a onclick="clarear()" href="#">claear</a></p>
+
+    <ul>
+        <li>
+            <a target="_blank" href="https://www.github.com/phillism" id="github">GitHub</a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.twitter.com/retacky" id="twitter">Twitter</a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.linkedin.com/404" id="linkedin">Linkedin</a>
+        </li>
+    </ul>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer id="footer"><a href="#topo">Voltar para o topo</a></footer>
+
+    <script>
+        function escurecer() {
+            document.body.style.backgroundColor = "#000000"
+            document.body.style.color = "#ffffff"
+        }
+
+        function clarear() {
+            document.body.style.backgroundColor = "#ffffff"
+            document.body.style.color = "#000000"
+        }
+    </script>
+</body>
+</html>
