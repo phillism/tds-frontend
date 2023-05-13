@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08 | Tabelas</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 5px solid rgb(0, 0, 0);
+            background: red;
+            padding: 5rem;
+        }
+
+        table td {
+            border: 1px solid #ccc;
+            width: 6rem;
+            height: 6rem;
+        }
+
+        table tr {
+            background: #ffffff;
+        }
+
+        /* Pintando os espaços em preto */
+        table tr:nth-child(odd) td:nth-child(even), table tr:nth-child(even) td:nth-child(odd) {
+            background: black;
+        }
+
+
+
+
+        /* Padronizando estilização para as linhas de peças */
+        table tr.linha-pecas:nth-child(odd) td:nth-child(odd)::after,
+        table tr.linha-pecas:nth-child(even) td:nth-child(even)::after {
+            content: '';
+            display: flex;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+
+        /* Adicionando peças da parte superior */
+        table tr.linha-pecas-pretas:nth-child(odd) td:nth-child(odd)::after,
+        table tr.linha-pecas-pretas:nth-child(even) td:nth-child(even)::after {
+            background: #000000;
+            box-shadow: -2px 4px 0 1px #535353;
+        }
+
+        /* Adicionando peças da parte inferior */
+        table tr.linha-pecas-brancas:nth-child(odd) td:nth-child(odd)::after,
+        table tr.linha-pecas-brancas:nth-child(even) td:nth-child(even)::after {
+            background: #e4e4e4;
+            box-shadow: 2px 6px 0 1px rgb(202, 202, 202);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tbody>
+            <tr class="linha-pecas linha-pecas-pretas">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="linha-pecas linha-pecas-pretas">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="linha-pecas linha-pecas-pretas">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="linha-pecas linha-pecas-brancas">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="linha-pecas linha-pecas-brancas">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="linha-pecas linha-pecas-brancas">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
