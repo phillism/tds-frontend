@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://st.depositphotos.com/1074550/2952/i/450/depositphotos_29522159-stock-photo-abstract-pastel-pink-and-white.jpg);
+            background-size: cover;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main {
+            border: 1px solid white;
+            padding: 2rem;
+            border-radius: 10px;
+            background-color: rgb(27, 24, 24);
+        }
+        .main section {
+            margin: 2rem 1rem;
+        }
+        .main section input {
+            padding: .5rem;
+        }
+        #phone{
+            position: relative;
+            bottom: 35px;
+            height: 20px;
+            border-radius: 5px;
+        }
+        #tel{
+            position: relative;
+            left: 70px;
+        }
+        .image, .tel{
+            margin-left: 2rem;
+            border-radius: 10px;
+        }
+        .image{
+            width: 150px;
+        }
+        .tel{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <section>
+            <h1 id="contagem">Clique na imagem!</h1>
+            <input class="image" type="image" onclick="clique()" src="https://t3.ftcdn.net/jpg/04/27/12/82/360_F_427128203_pMzi4Wg7PQ5Bwl52lrhZb8vxXwCYX8eC.jpg" alt="image">
+        </section>
+
+        <section>
+            <h1 id="tel">Telefone</h1>
+            <input type="tel" id="phone" pattern="\([0-9]{2}\[9]{1}[0-9]{4}-[0-9]{4})" placeholder="(xx)9xxxx-xxxx">
+            <input type="image" onclick="telefone()" class="tel" src="https://i.zst.com.br/thumbs/12/24/d/16492813.jpg" alt="image">
+        </section>
+
+        <section>
+            <label for="month">Selecione o mês que você quer analisar:</label>
+            <input type="month" name="month" id="month">
+        </section>
+
+        <section>
+            <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                <input type="range" id="b" name="b" value="50" /> +
+                <input type="number" id="a" name="a" value="10" /> =
+                <output name="result" for="a b">60</output>
+            </form>
+        </section>
+
+        <script>
+            let count = 0
+            function clique(){
+                count++
+                if (count == 1){
+                    return document.getElementById("contagem").innerHTML=(`A imagem foi clicada ${count} vez`)
+                } else {
+                    return document.getElementById("contagem").innerHTML=(`A imagem foi clicada ${count} vezes`)
+                }
+            }
+
+            function telefone(){
+                
+                const number = document.getElementById("phone").value
+                if (number.length == 0){
+                    return alert("O campo está vazio!")
+                }
+                return alert(`O número digitado foi ${number}!`)
+            }
+        </script>
+    </div>
+</body>
+</html>
